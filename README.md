@@ -1,7 +1,9 @@
-openshift-jee-sample
-====================
+# OpenShift Cookbook - Chapter 7 Sample Application#
 
-A sample app to be deployed on openshift environments
+A simple Job portal written using Java EE 6 and PostgreSQL 9.2.
 
-Note: to build this repository with maven you must specify "-Popenshift", eg "mvn clean package -Popenshift"
+To run it on OpenShift, run the following command.
 
+```
+$ rhc create-app jobstore jbosseap postgresql-9.2 --from-code https://github.com/OpenShift-Cookbook/chapter7-jobstore-javaee6.git
+```
